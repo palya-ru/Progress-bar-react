@@ -1,0 +1,78 @@
+.wrap {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+/*progress-bar start*/
+.line-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #212121;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.line-header + .progress {
+    margin-top: 10px;
+}
+
+.progress {
+    height: 22px;
+    background: rgba(233, 236, 239, 1);
+    border-radius: 11px;
+    display: flex;
+    overflow: hidden;
+}
+
+.progress-bar-bordered {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(233, 236, 239);
+}
+
+.progress .strip {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 22px 22px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+}
+
+.progress .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    white-space: nowrap;
+    background: #0D6EFD;
+    transition: 1s;
+    font-size: 12px;
+    position: relative;
+    border-radius: 20px;
+    min-width: 30px;
+}
+
+.line-header{
+    font-size: 14px;
+}
+
+.line-header .left {
+    margin-right: 15px;
+}
+
+.line-header .left, .line-header .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.line-header .label {
+    margin-right: 5px;
+    overflow-wrap: anywhere;
+    opacity: 0.65;
+}
+/*progress-bar end*/
